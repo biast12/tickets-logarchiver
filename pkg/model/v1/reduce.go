@@ -1,7 +1,7 @@
 package v1
 
 import (
-	"github.com/rxdn/gdl/objects/channel/message"
+	"github.com/TicketsBot-cloud/gdl/objects/channel/message"
 )
 
 func ReduceMessages(messages []message.Message) []Message {

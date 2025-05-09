@@ -2,9 +2,10 @@ package http
 
 import (
 	"errors"
-	"github.com/TicketsBot/logarchiver/internal"
-	"github.com/gin-gonic/gin"
 	"strconv"
+
+	"github.com/TicketsBot-cloud/logarchiver/internal"
+	"github.com/gin-gonic/gin"
 )
 
 func (s *Server) purgeStatusHandler(ctx *gin.Context) {

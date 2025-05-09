@@ -2,7 +2,8 @@ package repository
 
 import (
 	"context"
-	"github.com/TicketsBot/logarchiver/pkg/repository/model"
+
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository/model"
 	"github.com/google/uuid"
 )
 

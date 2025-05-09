@@ -2,7 +2,8 @@ package repository
 
 import (
 	"context"
-	"github.com/TicketsBot/logarchiver/pkg/config"
+
+	"github.com/TicketsBot-cloud/logarchiver/pkg/config"
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 

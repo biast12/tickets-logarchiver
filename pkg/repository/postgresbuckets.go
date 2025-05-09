@@ -4,7 +4,8 @@ import (
 	"context"
 	_ "embed"
 	"errors"
-	"github.com/TicketsBot/logarchiver/pkg/repository/model"
+
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository/model"
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v5"
 )

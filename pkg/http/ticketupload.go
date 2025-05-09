@@ -1,11 +1,12 @@
 package http
 
 import (
-	"github.com/TicketsBot/logarchiver/pkg/repository"
-	"github.com/TicketsBot/logarchiver/pkg/repository/model"
+	"strconv"
+
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository/model"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
-	"strconv"
 )
 
 func (s *Server) ticketUploadHandler(ctx *gin.Context) {

@@ -3,15 +3,16 @@ package s3client
 import (
 	"context"
 	"errors"
-	"github.com/TicketsBot/logarchiver/pkg/config"
-	"github.com/TicketsBot/logarchiver/pkg/repository"
-	"github.com/TicketsBot/logarchiver/pkg/repository/model"
-	"github.com/google/uuid"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
 	"net/url"
 	"strings"
 	"sync"
+
+	"github.com/TicketsBot-cloud/logarchiver/pkg/config"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository/model"
+	"github.com/google/uuid"
+	"github.com/minio/minio-go/v7"
+	"github.com/minio/minio-go/v7/pkg/credentials"
 )
 
 type ShardedClientManager struct {
@@ -61,7 +62,7 @@ func (s *ShardedClientManager) Load(ctx context.Context) error {
 
 		m, err := minio.New(host, &minio.Options{
 			Creds:  credentials.NewStaticV4(s.config.AccessKey, s.config.SecretKey, ""),
-			Secure: true,
+			Secure: false,
 		})
 
 		if err != nil {

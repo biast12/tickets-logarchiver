@@ -3,14 +3,15 @@ package main
 import (
 	"context"
 	"fmt"
+	"time"
+
+	"github.com/TicketsBot-cloud/logarchiver/pkg/config"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/http"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/s3client"
 	"github.com/TicketsBot/common/observability"
-	"github.com/TicketsBot/logarchiver/pkg/config"
-	"github.com/TicketsBot/logarchiver/pkg/http"
-	"github.com/TicketsBot/logarchiver/pkg/repository"
-	"github.com/TicketsBot/logarchiver/pkg/s3client"
 	"github.com/getsentry/sentry-go"
 	"go.uber.org/zap"
-	"time"
 )
 
 func main() {

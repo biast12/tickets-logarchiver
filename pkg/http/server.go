@@ -2,16 +2,17 @@ package http
 
 import (
 	"context"
-	"github.com/TicketsBot/logarchiver/internal"
-	"github.com/TicketsBot/logarchiver/pkg/config"
-	"github.com/TicketsBot/logarchiver/pkg/repository"
-	"github.com/TicketsBot/logarchiver/pkg/repository/model"
-	"github.com/TicketsBot/logarchiver/pkg/s3client"
+	"time"
+
+	"github.com/TicketsBot-cloud/logarchiver/internal"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/config"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository/model"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/s3client"
 	ginzap "github.com/gin-contrib/zap"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 	"go.uber.org/zap"
-	"time"
 )
 
 type Server struct {

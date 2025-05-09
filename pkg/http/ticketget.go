@@ -2,10 +2,11 @@ package http
 
 import (
 	"errors"
-	"github.com/TicketsBot/logarchiver/pkg/s3client"
+	"strconv"
+
+	"github.com/TicketsBot-cloud/logarchiver/pkg/s3client"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
-	"strconv"
 )
 
 func (s *Server) ticketGetHandler(ctx *gin.Context) {

@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"github.com/TicketsBot/logarchiver/pkg/model"
-	v22 "github.com/TicketsBot/logarchiver/pkg/model/v2"
-	"github.com/rxdn/gdl/objects/channel/message"
+	"github.com/TicketsBot-cloud/gdl/objects/channel/message"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/model"
+	v22 "github.com/TicketsBot-cloud/logarchiver/pkg/model/v2"
 )
 
 func ConvertToV2(messages []message.Message) v22.Transcript {

@@ -6,18 +6,19 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/TicketsBot/common/encryption"
-	"github.com/TicketsBot/logarchiver/pkg/config"
-	"github.com/TicketsBot/logarchiver/pkg/model"
-	"github.com/TicketsBot/logarchiver/pkg/model/v1"
-	"github.com/TicketsBot/logarchiver/pkg/model/v2"
-	"github.com/TicketsBot/logarchiver/pkg/s3client"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/rxdn/gdl/objects/channel/message"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/TicketsBot-cloud/gdl/objects/channel/message"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/config"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/model"
+	v1 "github.com/TicketsBot-cloud/logarchiver/pkg/model/v1"
+	v2 "github.com/TicketsBot-cloud/logarchiver/pkg/model/v2"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/s3client"
+	"github.com/TicketsBot/common/encryption"
+	"github.com/minio/minio-go/v7"
+	"github.com/minio/minio-go/v7/pkg/credentials"
 )
 
 var (

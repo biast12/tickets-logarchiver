@@ -1,11 +1,12 @@
 package v2
 
 import (
-	"github.com/TicketsBot/logarchiver/pkg/model"
-	"github.com/rxdn/gdl/objects/channel"
-	"github.com/rxdn/gdl/objects/channel/embed"
-	"github.com/rxdn/gdl/objects/channel/message"
 	"time"
+
+	"github.com/TicketsBot-cloud/gdl/objects/channel"
+	"github.com/TicketsBot-cloud/gdl/objects/channel/embed"
+	"github.com/TicketsBot-cloud/gdl/objects/channel/message"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/model"
 )
 
 type Transcript struct {

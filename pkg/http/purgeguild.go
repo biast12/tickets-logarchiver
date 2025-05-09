@@ -4,16 +4,17 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/TicketsBot/logarchiver/internal"
-	"github.com/TicketsBot/logarchiver/pkg/repository"
-	"github.com/TicketsBot/logarchiver/pkg/repository/model"
-	"github.com/gin-gonic/gin"
-	"github.com/minio/minio-go/v7"
-	"go.uber.org/zap"
 	"net/http"
 	"strconv"
 	"strings"
 	"sync"
+
+	"github.com/TicketsBot-cloud/logarchiver/internal"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/repository/model"
+	"github.com/gin-gonic/gin"
+	"github.com/minio/minio-go/v7"
+	"go.uber.org/zap"
 )
 
 func (s *Server) purgeGuildHandler(ctx *gin.Context) {

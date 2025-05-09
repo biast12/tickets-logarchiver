@@ -4,12 +4,15 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/TicketsBot/logarchiver/pkg/config"
-	"github.com/TicketsBot/logarchiver/pkg/s3client"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
 	"strconv"
 	"strings"
+
+	"github.com/TicketsBot-cloud/logarchiver/pkg/config"
+	"github.com/TicketsBot-cloud/logarchiver/pkg/s3client"
+	"github.com/minio/minio-go/v7"
+	"github.com/minio/minio-go/v7/pkg/credentials"
+
+	_ "github.com/joho/godotenv/autoload"
 )
 
 var (

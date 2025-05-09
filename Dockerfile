@@ -4,8 +4,8 @@ RUN go version
 
 RUN apk update && apk upgrade && apk add git zlib-dev gcc musl-dev
 
-COPY . /go/src/github.com/TicketsBot/logarchiver
-WORKDIR  /go/src/github.com/TicketsBot/logarchiver
+COPY . /go/src/github.com/TicketsBot-cloud/logarchiver
+WORKDIR  /go/src/github.com/TicketsBot-cloud/logarchiver
 
 RUN set -Eeux && \
     go mod download && \
@@ -20,7 +20,7 @@ FROM alpine:latest
 
 RUN apk update && apk upgrade
 
-COPY --from=builder /go/src/github.com/TicketsBot/logarchiver/logarchiver /srv/logarchiver/logarchiver
+COPY --from=builder /go/src/github.com/TicketsBot-cloud/logarchiver/logarchiver /srv/logarchiver/logarchiver
 RUN chmod +x /srv/logarchiver/logarchiver
 
 RUN adduser container --disabled-password --no-create-home
