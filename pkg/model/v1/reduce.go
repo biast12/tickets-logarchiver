@@ -25,6 +25,7 @@ func ReduceMessage(message message.Message) Message {
 		Content:     message.Content,
 		Timestamp:   message.Timestamp,
 		Embeds:      message.Embeds,
+		Components:  message.Components,
 		Attachments: message.Attachments,
 	}
 }
